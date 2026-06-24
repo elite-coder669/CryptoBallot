@@ -12,6 +12,26 @@ A simulated biometric multi-factor authentication voting system — a front-end 
 
 CryptoBallot walks a voter through a 5-step authentication and voting wizard:
 
+```mermaid
+flowchart TD
+    A[index.html] --> B[Start Voting]
+    B --> C[Step 1: Iris Scan]
+    C --> D{Valid Iris ID?}
+    D -->|No| C
+    D -->|Yes| E[Step 2: NFC Activation]
+    E --> F{Valid NFC tag?}
+    F -->|No| E
+    F -->|Yes| G[Step 3: Face Recognition]
+    G --> H[Display voter photo + name]
+    H --> I[Confirm identity]
+    I --> J[Step 4: Voting Booth]
+    J --> K[Select party A-E]
+    K --> L[Step 5: Confirmation]
+    L --> M[Vote recorded]
+    M --> N[Auto-reset after 3s]
+    N --> B
+```
+
 1. **Iris Scan** — voter enters a pre-registered Iris ID
 2. **NFC Activation** — voter enters an NFC tag ID
 3. **Face Recognition** — matched voter photo and name are displayed for confirmation
