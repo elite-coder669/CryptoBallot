@@ -1,5 +1,11 @@
 # CryptoBallot
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
+![License](https://img.shields.io/badge/license-View--Only-lightgrey)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 A simulated biometric multi-factor authentication voting system — a front-end demonstration of secure, transparent digital elections.
 
 ## Stack
